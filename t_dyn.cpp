@@ -9,7 +9,7 @@ public:
 	//X(int v=0): x(0) { cout << this<<" init0"<<endl;};
 	~X() { cout << this<<"("<<x<<") destroy"<<endl;};
 	X(const X& y) { cout <<this<<" copy from "<<&y<<" ("<<y.x<<")"<<endl; x=y.x;};
-	X& operator=(const X& y) { cout <<this<<" assigning from "<<&y<<" ("<<y.x<<")"<<endl; x=y.x;};
+	X& operator=(const X& y) { cout <<this<<" assigning from "<<&y<<" ("<<y.x<<")"<<endl; x=y.x; return *this;};
 };
 
 X z(const int n=56) {
