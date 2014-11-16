@@ -22,18 +22,16 @@ X& leak(const int n=352) {
 	return ret;
 }
 
-#define P(x) cout <<#x<<endl; x;
+#define TRACE(...) cout <<#__VA_ARGS__<<endl; __VA_ARGS__
 int main() {
-P(X a;);
-P(X b;);
-P(X c=5;);
-P(b=10;);
-P(X d=z(60););
-P(X f=d;);
-P(d=z(70););
-P(b=c;);
-P(b=leak(100););
-P(X e=leak(110););
+TRACE(X a,b,c=5;)
+TRACE(b=10;)
+TRACE(X d=z(60);)
+TRACE(X f=d;)
+TRACE(d=z(70);)
+TRACE(b=c;)
+TRACE(b=leak(100);)
+TRACE(X e=leak(110);)
  cout <<"END"<<endl;
  return 0;
 }
