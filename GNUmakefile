@@ -2,7 +2,7 @@
 CXXFLAGS=-std=c++11
 
 .cpp.s:
-	g++ -S -o $@ $<
+	c++ -S -o $@ $<
 
 all: t_constr.out t_dyn tref
 clean:
