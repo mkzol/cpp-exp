@@ -1,8 +1,8 @@
 .SUFFIXES: .s
-CXXFLAGS=-std=c++11
+CXXFLAGS=-std=c++11 -g
 
 .cpp.s:
-	c++ -S -o $@ $<
+	c++ -g -S -o $@ $<
 
 all: t_constr.out t_dyn tref
 clean:
