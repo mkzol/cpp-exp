@@ -1,9 +1,11 @@
 class X {
-  int x;
-	public:
-X() { x=4534; };
+  int i;
+  public:
+   X();
 };
 
-int main() {
-	X x;
+X::X() : i(56) {};
+
+void tst() {
+  X x;
 }

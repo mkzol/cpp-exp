@@ -1,9 +1,9 @@
 class X {
-  int x;
-	public:
-X() : x(4534) {};
+  int i;
+  public:
+   X() : i(56) {};
 };
 
-int main() {
-	X x;
+void tst() {
+  X x;
 }
