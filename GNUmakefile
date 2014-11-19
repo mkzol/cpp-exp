@@ -5,9 +5,9 @@ CC=g++
 .cpp.s:
 	c++ -g -S -o $@ $<
 
-all: t_constr.out t_dyn tref main_kv minimal.s t_call.out
+all: t_constr.out t_dyn tref main_kv minimal.s t_call.out t_polym
 clean:
-	rm -f *.out *.s *.o t_dyn tref main_kv
+	rm -f *.out *.s *.o t_dyn tref main_kv t_polym
 
 t_call.out: t_call_ref.s t_call_ptr.s
 	diff $^ > $@; \
