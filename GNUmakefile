@@ -5,7 +5,7 @@ CC=g++
 .cpp.s:
 	c++ -g -S -o $@ $<
 
-all: t_constr.out t_dyn tref main_kv minimal.s t_call.out t_polym
+all: t_constr.out t_dyn tref main_kv minimal.s t_call.out t_polym t_xref1.o t_xref2.o
 clean:
 	rm -f *.out *.s *.o t_dyn tref main_kv t_polym
 
